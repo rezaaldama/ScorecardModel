@@ -317,4 +317,3 @@ X_test_woe_transformed.insert(0, 'Intercept', 1)
 scorecard_scores = df_scorecard['Scores'].to_frame().to_numpy()
 y_scores = X_test_woe_transformed.dot(scorecard_scores)
 X_test['Scores'] = y_scores.values
-
